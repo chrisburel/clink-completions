@@ -578,7 +578,7 @@ local git_parser = parser(
         "ls-tree",
         "mailinfo",
         "mailsplit",
-        "merge" .. parser({branches},
+        "merge" .. parser({local_or_remote_branches}, {branches},
             "--commit", "--no-commit",
             "--edit", "-e", "--no-edit",
             "--ff", "--no-ff", "--ff-only",
